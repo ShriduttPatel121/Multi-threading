@@ -46,8 +46,8 @@ app.get("/blocking", async (req, res) => {
         const start = Date.now();
         const resultArr = await Promise.all(counterPromises);
         const end = Date.now();
-        console.log("PROCESS TIMING: ====>  ", end - start, "😎😎");
-        return res.status(200).send(`Counter calculated in 😇😎😎 ${resultArr.reduce((acc, curVal) => acc + curVal, 0)}`);
+        console.log("PROCESS TIMING: ====>  ", end - start, " 😎😎");
+        return res.status(200).send(`Counter calculated: 😇😎😎 ${resultArr.reduce((acc, curVal) => acc + curVal, 0)}`);
     } catch(error) {
         return res.status(500).send("Counter request failed 😱😱😱")
     }
