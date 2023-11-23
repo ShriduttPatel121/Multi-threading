@@ -32,8 +32,8 @@ function createCounterWorker() {
 }
 
 app.get("/non-blocking/", (req, res) => {
-    console.log("🚀 ~ file: app.js:17 ~ app.get ~ req:")
-    res.status(200).send("This page is non-blocking");
+    console.log("🚀 ~ file: app.js:17 ~ app.get ~ re:")
+    res.status(200).send("This page is non-blocking 12121");
 });
 
 app.get("/blocking", async (req, res) => {
